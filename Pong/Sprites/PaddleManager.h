@@ -8,6 +8,9 @@
 using namespace std;
 class PaddleManager {
 public:
+	/*
+	Creates a new PaddleManager with a height argument
+	*/
 	PaddleManager(float);
 	void handleEvent(const sf::Event);
 	void draw(sf::RenderTarget*);
