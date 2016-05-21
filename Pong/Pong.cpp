@@ -1,6 +1,6 @@
 #include <SFML/Graphics.hpp>
-#include "PaddleManager.h"
-#include "Ball.h"
+#include "Sprites/PaddleManager.h"
+#include "Sprites/Ball.h"
 using namespace std;
 int main() {
 	sf::RenderWindow window(sf::VideoMode(600, 600), "Pong");
