@@ -114,15 +114,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Pong.cpp" />
+    <ClCompile Include="PongGame.cpp" />
     <ClCompile Include="Sprites\Ball.cpp" />
     <ClCompile Include="Sprites\Paddle.cpp" />
     <ClCompile Include="Sprites\PaddleManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Pong.h" />
+    <ClInclude Include="PongGame.h" />
     <ClInclude Include="Sprites\Ball.h" />
     <ClInclude Include="Sprites\Paddle.h" />
     <ClInclude Include="Sprites\PaddleManager.h" />
+    <ClInclude Include="Sprites\Sprites.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
