@@ -13,15 +13,20 @@ public:
 	/*
 	updates the game state based on the input event
 	*/
-	void update(sf::RenderTarget*, const sf::Event);
+	void update(const sf::Event);
 	/*
 	updates the game state in absence of any input events
 	*/
-	void update(sf::RenderTarget*);
+	void update();
+	/*
+	render is called with SFML RenderTarget, use this to draw current game state
+	*/
+	void render(sf::RenderTarget*);
 	~PongGame();
 private:
 	std::unique_ptr<PaddleManager> paddleManager;
 	std::unique_ptr<Ball> ball;
+	void collisions();
 };
 
 
