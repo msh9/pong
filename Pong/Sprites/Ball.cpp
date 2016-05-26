@@ -13,8 +13,7 @@ Ball::Ball(float initialX, float initialY): currentX(initialX), currentY(initial
 	this->direction.x = directionDistribution(gen);
 	this->direction.y = directionDistribution(gen);
 
-	std::uniform_real_distribution<> velocityDistribution(0, 10);
-	this->velocity = velocityDistribution(gen);
+	this->velocity = 5.f;
 }
 
 void Ball::draw(sf::RenderTarget* renderer) {
