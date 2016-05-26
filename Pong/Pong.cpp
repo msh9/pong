@@ -14,6 +14,7 @@ int main() {
 			pong.update(event);
 
 		}
+		pong.updateGameState();
 		window.clear(sf::Color::Black);
 		pong.render(&window);
 		window.display();

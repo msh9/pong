@@ -17,7 +17,7 @@ public:
 	/*
 	updates the game state in absence of any input events
 	*/
-	void update();
+	void updateGameState();
 	/*
 	render is called with SFML RenderTarget, use this to draw current game state
 	*/

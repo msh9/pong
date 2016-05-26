@@ -12,8 +12,9 @@ void PongGame::update(const sf::Event event) {
 	}
 }
 
-void PongGame::update() {
-
+void PongGame::updateGameState() {
+	this->collisions();
+	this->ball->update();
 }
 
 void PongGame::render(sf::RenderTarget* renderer) {
